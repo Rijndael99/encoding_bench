@@ -1,5 +1,7 @@
 # videos
 *videos/*
+*encoded/*
+*logs/*
 
 #microsoft staff
 *.vscode
