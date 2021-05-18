@@ -1,0 +1,5 @@
+youtube-dl.exe -f 313 https://www.youtube.com/watch?v=6D-A6CL3Pv8
+youtube-dl.exe -f 313 https://www.youtube.com/watch?v=OYQhdBDTnnA
+youtube-dl.exe -f 313 https://www.youtube.com/watch?v=jvIGFhqbe0c
+youtube-dl.exe -f 315 https://www.youtube.com/watch?v=IMI67dpbd1A
+youtube-dl.exe -f 315 https://www.youtube.com/watch?v=LXb3EKWsInQ
