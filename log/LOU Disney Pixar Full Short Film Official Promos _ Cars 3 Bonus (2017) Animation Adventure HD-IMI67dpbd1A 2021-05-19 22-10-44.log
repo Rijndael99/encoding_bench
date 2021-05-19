@@ -1,0 +1,224 @@
+Handbrake Version: 1.3.3 (2021031800)
+[22:10:44] gtkgui: Custom Preset: /bench/x264_MKV_1080p30_med_24
+[22:10:44] Starting work at: Wed May 19 22:10:44 2021
+
+[22:10:44] 1 job(s) to process
+[22:10:44] json job:
+{
+    "Audio": {
+        "AudioList": [],
+        "CopyMask": [],
+        "FallbackEncoder": 0
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 29,
+                    "Ticks": 2691000
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/yuri/Scrivania/LOU Disney Pixar Full Short Film Official Promos _ Cars 3 Bonus (2017) Animation Adventure HD-IMI67dpbd1A.mkv",
+        "InlineParameterSets": false,
+        "Mp4Options": {
+            "IpodAtom": false,
+            "Mp4Optimize": false
+        },
+        "Mux": "mkv"
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 3,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "1",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "1"
+                }
+            },
+            {
+                "ID": 4,
+                "Settings": {
+                    "mode": "7"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": 2,
+                    "rate": "27000000/900000"
+                }
+            },
+            {
+                "ID": 12,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            }
+        ]
+    },
+    "Metadata": {
+        "Name": "LOU Disney Pixar Full Short Film Official Promos _ Cars 3 Bonus (2017) Animation"
+    },
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "Path": "/home/yuri/gitHub/encoding_bench/videos/LOU Disney Pixar Full Short Film Official Promos _ Cars 3 Bonus (2017) Animation Adventure HD-IMI67dpbd1A.webm",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "ColorFormat": 0,
+        "ColorMatrix": 1,
+        "ColorPrimaries": 1,
+        "ColorRange": 1,
+        "ColorTransfer": 1,
+        "Encoder": "x264",
+        "Level": "auto",
+        "Options": "",
+        "Preset": "medium",
+        "Profile": "auto",
+        "QSV": {
+            "AsyncDepth": 4,
+            "Decode": false
+        },
+        "Quality": 24.0,
+        "Tune": "",
+        "Turbo": false,
+        "TwoPass": false
+    }
+}
+[22:10:44] CPU: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+[22:10:44]  - Intel microarchitecture Kaby Lake
+[22:10:44]  - logical processor count: 12
+[22:10:44] Intel Quick Sync Video support: yes
+[22:10:44]  - Intel Media SDK hardware: API 1.34 (minimum: 1.3)
+[22:10:44]  - H.264 encoder: yes
+[22:10:44]     - preferred implementation: hardware (any) via ANY
+[22:10:44]     - capabilities (hardware):  breftype icq+la+i+downs vsinfo opt1 opt2+mbbrc+extbrc+trellis+ib_adapt+nmpslice
+[22:10:44]  - H.265 encoder: yes (8bit: yes, 10bit: yes)
+[22:10:44]     - preferred implementation: hardware (any) via ANY
+[22:10:44]     - capabilities (hardware):  bpyramid icq vsinfo opt1
+[22:10:44] hb_scan: path=/home/yuri/gitHub/encoding_bench/videos/LOU Disney Pixar Full Short Film Official Promos _ Cars 3 Bonus (2017) Animation Adventure HD-IMI67dpbd1A.webm, title_index=1
+udfread ERROR: ECMA 167 Volume Recognition failed
+disc.c:323: failed opening UDF image /home/yuri/gitHub/encoding_bench/videos/LOU Disney Pixar Full Short Film Official Promos _ Cars 3 Bonus (2017) Animation Adventure HD-IMI67dpbd1A.webm
+disc.c:424: error opening file BDMV/index.bdmv
+disc.c:424: error opening file BDMV/BACKUP/index.bdmv
+bluray.c:2585: nav_get_title_list(/home/yuri/gitHub/encoding_bench/videos/LOU Disney Pixar Full Short Film Official Promos _ Cars 3 Bonus (2017) Animation Adventure HD-IMI67dpbd1A.webm/) failed
+[22:10:44] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[22:10:44] dvd: not a dvd - trying as a stream/file instead
+Input #0, matroska,webm, from '/home/yuri/gitHub/encoding_bench/videos/LOU Disney Pixar Full Short Film Official Promos _ Cars 3 Bonus (2017) Animation Adventure HD-IMI67dpbd1A.webm':
+  Metadata:
+    encoder         : google/video-file
+  Duration: 00:00:29.90, start: 0.000000, bitrate: 18208 kb/s
+    Stream #0:0(eng): Video: vp9 (Profile 0), yuv420p(tv, bt709), 3840x2160, SAR 1:1 DAR 16:9, 60 fps, 60 tbr, 1k tbn, 1k tbc (default)
+[22:10:44] scan: decoding previews for title 1
+[22:10:45] scan: 10 previews, 3840x2160, 60,000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1
+[22:10:45] libhb: scan thread found 1 valid title(s)
+[22:10:45] Starting Task: Encoding Pass
+[22:10:45] job configuration:
+[22:10:45]  * source
+[22:10:45]    + /home/yuri/gitHub/encoding_bench/videos/LOU Disney Pixar Full Short Film Official Promos _ Cars 3 Bonus (2017) Animation Adventure HD-IMI67dpbd1A.webm
+[22:10:45]    + title 1, chapter(s) 1 to 1
+[22:10:45]    + container: matroska,webm
+[22:10:45]    + data rate: 18208 kbps
+[22:10:45]  * destination
+[22:10:45]    + /home/yuri/Scrivania/LOU Disney Pixar Full Short Film Official Promos _ Cars 3 Bonus (2017) Animation Adventure HD-IMI67dpbd1A.mkv
+[22:10:45]    + container: Matroska (libavformat)
+[22:10:45]  * video track
+[22:10:45]    + decoder: vp9
+[22:10:45]    + filters
+[22:10:45]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[22:10:45]      + Decomb (mode=39)
+[22:10:45]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[22:10:45]        + frame rate: 60,000 fps -> peak rate limited to 30,000 fps
+[22:10:45]      + Crop and Scale (width=1920:height=1080:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[22:10:45]        + source: 3840 * 2160, crop (0/0/0/0): 3840 * 2160, scale: 1920 * 1080
+[22:10:45]    + Output geometry
+[22:10:45]      + storage dimensions: 1920 x 1080
+[22:10:45]      + pixel aspect ratio: 1 : 1
+[22:10:45]      + display dimensions: 1920 x 1080
+[22:10:45]    + encoder: H.264 (libx264)
+[22:10:45]      + preset:  medium
+[22:10:45]      + profile: auto
+[22:10:45]      + level:   auto
+[22:10:45]      + quality: 24,00 (RF)
+[22:10:45]      + color profile: 1-1-1
+[22:10:45] sync: expecting 1794 video frames
+[22:10:45] encx264: min-keyint: 30, keyint: 300
+[22:10:45] encx264: encoding at constant RF 24,000000
+x264 [info]: using SAR=1/1
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile High, level 4.0, 4:2:0, 8-bit
+[22:10:46] sync: first pts video is 0
+[22:10:46] sync: Chapter 1 at frame 1 time 0
+[22:11:36] reader: done. 1 scr changes
+[22:11:39] work: average encoding speed for job is 34,243504 fps
+[22:11:39] comb detect: heavy 0 | light 0 | uncombed 1794 | total 1794
+[22:11:39] decomb: deinterlaced 0 | blended 0 | unfiltered 1794 | total 1794
+[22:11:39] vfr: 898 frames output, 896 dropped and 0 duped for CFR/PFR
+[22:11:39] vfr: lost time: 0 (0 frames)
+[22:11:39] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[22:11:39] vp9-decoder done: 1794 frames, 0 decoder errors
+[22:11:39] sync: got 1794 frames, 1794 expected
+[22:11:39] sync: framerate min 60,000 fps, max 60,000 fps, avg 60,000 fps
+x264 [info]: frame I:11    Avg QP:19,84  size:131302
+x264 [info]: frame P:277   Avg QP:21,96  size: 19689
+x264 [info]: frame B:610   Avg QP:24,81  size:  2487
+x264 [info]: consecutive B-frames:  6,3%  6,7%  7,7% 79,3%
+x264 [info]: mb I  I16..4: 13,2% 66,5% 20,3%
+x264 [info]: mb P  I16..4:  2,5%  6,4%  0,3%  P16..4: 28,2%  7,8%  5,0%  0,0%  0,0%    skip:49,8%
+x264 [info]: mb B  I16..4:  0,2%  0,4%  0,0%  B16..8: 20,8%  0,5%  0,1%  direct: 0,5%  skip:77,5%  L0:42,1% L1:55,3% BI: 2,6%
+x264 [info]: 8x8 transform intra:67,9% inter:75,8%
+x264 [info]: coded y,uvDC,uvAC intra: 38,4% 50,4% 14,8% inter: 5,5% 6,5% 0,1%
+x264 [info]: i16 v,h,dc,p: 41% 26% 12% 20%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 22% 27%  3%  3%  3%  4%  3%  4%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 28% 11%  5%  7%  6%  7%  5%  6%
+x264 [info]: i8c dc,h,v,p: 51% 24% 20%  5%
+x264 [info]: Weighted P-Frames: Y:11,2% UV:10,1%
+x264 [info]: ref P L0: 74,7%  9,8% 12,8%  2,6%  0,1%
+x264 [info]: ref B L0: 92,1%  7,0%  0,8%
+x264 [info]: ref B L1: 96,5%  3,5%
+x264 [info]: kb/s:2248,96
+[22:11:39] mux: track 0, 898 frames, 8414432 bytes, 2246,34 kbps, fifo 1024
+[22:11:39] Finished work at: Wed May 19 22:11:39 2021
+
+[22:11:39] libhb: work result = 0

@@ -1,0 +1,223 @@
+Handbrake Version: 1.3.3 (2021031800)
+[21:42:46] gtkgui: Custom Preset: /bench/x264_MKV_1080p30_med_24
+[21:42:46] Starting work at: Wed May 19 21:42:46 2021
+
+[21:42:46] 1 job(s) to process
+[21:42:46] json job:
+{
+    "Audio": {
+        "AudioList": [],
+        "CopyMask": [],
+        "FallbackEncoder": 0
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 4,
+                    "Seconds": 26,
+                    "Ticks": 23976000
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/yuri/Scrivania/AWAKENING _ NEW ZEALAND 4K ULTRA HD-6D-A6CL3Pv8.mkv",
+        "InlineParameterSets": false,
+        "Mp4Options": {
+            "IpodAtom": false,
+            "Mp4Optimize": false
+        },
+        "Mux": "mkv"
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 3,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "1",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "1"
+                }
+            },
+            {
+                "ID": 4,
+                "Settings": {
+                    "mode": "7"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": 2,
+                    "rate": "27000000/900000"
+                }
+            },
+            {
+                "ID": 12,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            }
+        ]
+    },
+    "Metadata": {
+        "Name": "AWAKENING _ NEW ZEALAND 4K ULTRA HD-6D-A6CL3Pv8"
+    },
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "Path": "/home/yuri/gitHub/encoding_bench/videos/AWAKENING _ NEW ZEALAND 4K ULTRA HD-6D-A6CL3Pv8.webm",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "ColorFormat": 0,
+        "ColorMatrix": 1,
+        "ColorPrimaries": 1,
+        "ColorRange": 1,
+        "ColorTransfer": 1,
+        "Encoder": "x264",
+        "Level": "auto",
+        "Options": "",
+        "Preset": "medium",
+        "Profile": "auto",
+        "QSV": {
+            "AsyncDepth": 4,
+            "Decode": false
+        },
+        "Quality": 24.0,
+        "Tune": "",
+        "Turbo": false,
+        "TwoPass": false
+    }
+}
+[21:42:46] CPU: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+[21:42:46]  - Intel microarchitecture Kaby Lake
+[21:42:46]  - logical processor count: 12
+[21:42:46] Intel Quick Sync Video support: yes
+[21:42:46]  - Intel Media SDK hardware: API 1.34 (minimum: 1.3)
+[21:42:46]  - H.264 encoder: yes
+[21:42:46]     - preferred implementation: hardware (any) via ANY
+[21:42:46]     - capabilities (hardware):  breftype icq+la+i+downs vsinfo opt1 opt2+mbbrc+extbrc+trellis+ib_adapt+nmpslice
+[21:42:46]  - H.265 encoder: yes (8bit: yes, 10bit: yes)
+[21:42:46]     - preferred implementation: hardware (any) via ANY
+[21:42:46]     - capabilities (hardware):  bpyramid icq vsinfo opt1
+[21:42:46] hb_scan: path=/home/yuri/gitHub/encoding_bench/videos/AWAKENING _ NEW ZEALAND 4K ULTRA HD-6D-A6CL3Pv8.webm, title_index=1
+udfread ERROR: ECMA 167 Volume Recognition failed
+disc.c:323: failed opening UDF image /home/yuri/gitHub/encoding_bench/videos/AWAKENING _ NEW ZEALAND 4K ULTRA HD-6D-A6CL3Pv8.webm
+disc.c:424: error opening file BDMV/index.bdmv
+disc.c:424: error opening file BDMV/BACKUP/index.bdmv
+bluray.c:2585: nav_get_title_list(/home/yuri/gitHub/encoding_bench/videos/AWAKENING _ NEW ZEALAND 4K ULTRA HD-6D-A6CL3Pv8.webm/) failed
+[21:42:46] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[21:42:46] dvd: not a dvd - trying as a stream/file instead
+Input #0, matroska,webm, from '/home/yuri/gitHub/encoding_bench/videos/AWAKENING _ NEW ZEALAND 4K ULTRA HD-6D-A6CL3Pv8.webm':
+  Metadata:
+    encoder         : google/video-file
+  Duration: 00:04:26.40, start: 0.000000, bitrate: 15896 kb/s
+    Stream #0:0(eng): Video: vp9 (Profile 0), yuv420p(tv, bt709), 3840x2160, SAR 1:1 DAR 16:9, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)
+[21:42:46] scan: decoding previews for title 1
+[21:42:48] scan: 10 previews, 3840x2160, 25,000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1
+[21:42:48] libhb: scan thread found 1 valid title(s)
+[21:42:48] Starting Task: Encoding Pass
+[21:42:48] job configuration:
+[21:42:48]  * source
+[21:42:48]    + /home/yuri/gitHub/encoding_bench/videos/AWAKENING _ NEW ZEALAND 4K ULTRA HD-6D-A6CL3Pv8.webm
+[21:42:48]    + title 1, chapter(s) 1 to 1
+[21:42:48]    + container: matroska,webm
+[21:42:48]    + data rate: 15896 kbps
+[21:42:48]  * destination
+[21:42:48]    + /home/yuri/Scrivania/AWAKENING _ NEW ZEALAND 4K ULTRA HD-6D-A6CL3Pv8.mkv
+[21:42:48]    + container: Matroska (libavformat)
+[21:42:48]  * video track
+[21:42:48]    + decoder: vp9
+[21:42:48]    + filters
+[21:42:48]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[21:42:48]      + Decomb (mode=39)
+[21:42:48]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[21:42:48]        + frame rate: 25,000 fps -> peak rate limited to 30,000 fps
+[21:42:48]      + Crop and Scale (width=1920:height=1080:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[21:42:48]        + source: 3840 * 2160, crop (0/0/0/0): 3840 * 2160, scale: 1920 * 1080
+[21:42:48]    + Output geometry
+[21:42:48]      + storage dimensions: 1920 x 1080
+[21:42:48]      + pixel aspect ratio: 1 : 1
+[21:42:48]      + display dimensions: 1920 x 1080
+[21:42:48]    + encoder: H.264 (libx264)
+[21:42:48]      + preset:  medium
+[21:42:48]      + profile: auto
+[21:42:48]      + level:   auto
+[21:42:48]      + quality: 24,00 (RF)
+[21:42:48]      + color profile: 1-1-1
+[21:42:48] sync: expecting 6660 video frames
+[21:42:48] encx264: encoding at constant RF 24,000000
+x264 [info]: using SAR=1/1
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile High, level 4.0, 4:2:0, 8-bit
+[21:42:48] sync: first pts video is 0
+[21:42:48] sync: Chapter 1 at frame 1 time 0
+[21:49:21] reader: done. 1 scr changes
+[21:49:25] work: average encoding speed for job is 16,828552 fps
+[21:49:25] comb detect: heavy 134 | light 667 | uncombed 5859 | total 6660
+[21:49:25] decomb: deinterlaced 134 | blended 667 | unfiltered 5859 | total 6660
+[21:49:25] vfr: 6660 frames output, 0 dropped and 0 duped for CFR/PFR
+[21:49:25] vfr: lost time: 0 (0 frames)
+[21:49:25] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[21:49:25] vp9-decoder done: 6660 frames, 0 decoder errors
+[21:49:25] sync: got 6660 frames, 6660 expected
+[21:49:25] sync: framerate min 25,000 fps, max 25,000 fps, avg 25,000 fps
+x264 [info]: frame I:36    Avg QP:19,54  size:220743
+x264 [info]: frame P:1771  Avg QP:22,79  size: 66424
+x264 [info]: frame B:4853  Avg QP:26,58  size: 15495
+x264 [info]: consecutive B-frames:  2,4%  0,7%  1,6% 95,3%
+x264 [info]: mb I  I16..4: 13,7% 62,9% 23,5%
+x264 [info]: mb P  I16..4:  6,7% 13,1%  1,6%  P16..4: 33,7% 14,2%  9,5%  0,0%  0,0%    skip:21,3%
+x264 [info]: mb B  I16..4:  0,7%  1,2%  0,3%  B16..8: 35,1%  4,8%  1,5%  direct: 3,6%  skip:52,9%  L0:41,6% L1:47,9% BI:10,5%
+x264 [info]: 8x8 transform intra:60,1% inter:61,6%
+x264 [info]: coded y,uvDC,uvAC intra: 34,8% 30,2% 4,7% inter: 14,3% 10,5% 0,5%
+x264 [info]: i16 v,h,dc,p: 17% 35% 10% 38%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 19% 23% 34%  3%  4%  3%  6%  3%  5%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 16% 29% 20%  4%  6%  5%  9%  3%  8%
+x264 [info]: i8c dc,h,v,p: 65% 22% 10%  3%
+x264 [info]: Weighted P-Frames: Y:21,3% UV:11,9%
+x264 [info]: ref P L0: 58,4% 18,9% 14,3%  7,2%  1,2%
+x264 [info]: ref B L0: 88,1%  9,2%  2,7%
+x264 [info]: ref B L1: 93,6%  6,4%
+x264 [info]: kb/s:6029,42
+[21:49:25] mux: track 0, 6660 frames, 200778031 bytes, 6028,47 kbps, fifo 1024
+[21:49:25] Finished work at: Wed May 19 21:49:25 2021
+
+[21:49:25] libhb: work result = 0
