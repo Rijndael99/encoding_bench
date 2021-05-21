@@ -1,0 +1,205 @@
+Handbrake Version: 1.3.3 (2021031800)
+[10:32:53] gtkgui: Custom Preset: /bench/Nvenc MKV 1080p30 med 24
+[10:32:53] Starting work at: Fri May 21 10:32:53 2021
+
+[10:32:53] 1 job(s) to process
+[10:32:53] json job:
+{
+    "Audio": {
+        "AudioList": [],
+        "CopyMask": [],
+        "FallbackEncoder": 0
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 4,
+                    "Seconds": 54,
+                    "Ticks": 26534340
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/yuri/Scrivania/San Andreas (2015) -  Tsunami Scene - Pure Action [4K]-jvIGFhqbe0c.mkv",
+        "InlineParameterSets": false,
+        "Mp4Options": {
+            "IpodAtom": false,
+            "Mp4Optimize": false
+        },
+        "Mux": "mkv"
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 3,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "1",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "1"
+                }
+            },
+            {
+                "ID": 4,
+                "Settings": {
+                    "mode": "7"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": 2,
+                    "rate": "27000000/900000"
+                }
+            },
+            {
+                "ID": 12,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            }
+        ]
+    },
+    "Metadata": {
+        "Name": "San Andreas (2015) -  Tsunami Scene - Pure Action [4K]-jvIGFhqbe0c"
+    },
+    "PAR": {
+        "Den": 133,
+        "Num": 180
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "Path": "/home/yuri/gitHub/encoding_bench/videos/San Andreas (2015) -  Tsunami Scene - Pure Action [4K]-jvIGFhqbe0c.webm",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "ColorFormat": 0,
+        "ColorMatrix": 1,
+        "ColorPrimaries": 1,
+        "ColorRange": 1,
+        "ColorTransfer": 1,
+        "Encoder": "nvenc_h264",
+        "Level": "auto",
+        "Options": "",
+        "Preset": "medium",
+        "Profile": "auto",
+        "QSV": {
+            "AsyncDepth": 4,
+            "Decode": false
+        },
+        "Quality": 24.0,
+        "Tune": "",
+        "Turbo": false,
+        "TwoPass": false
+    }
+}
+[10:32:53] CPU: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+[10:32:53]  - Intel microarchitecture Kaby Lake
+[10:32:53]  - logical processor count: 12
+[10:32:53] Intel Quick Sync Video support: yes
+[10:32:53]  - Intel Media SDK hardware: API 1.34 (minimum: 1.3)
+[10:32:53]  - H.264 encoder: yes
+[10:32:53]     - preferred implementation: hardware (any) via ANY
+[10:32:53]     - capabilities (hardware):  breftype icq+la+i+downs vsinfo opt1 opt2+mbbrc+extbrc+trellis+ib_adapt+nmpslice
+[10:32:53]  - H.265 encoder: yes (8bit: yes, 10bit: yes)
+[10:32:53]     - preferred implementation: hardware (any) via ANY
+[10:32:53]     - capabilities (hardware):  bpyramid icq vsinfo opt1
+[10:32:53] hb_scan: path=/home/yuri/gitHub/encoding_bench/videos/San Andreas (2015) -  Tsunami Scene - Pure Action [4K]-jvIGFhqbe0c.webm, title_index=1
+udfread ERROR: ECMA 167 Volume Recognition failed
+disc.c:323: failed opening UDF image /home/yuri/gitHub/encoding_bench/videos/San Andreas (2015) -  Tsunami Scene - Pure Action [4K]-jvIGFhqbe0c.webm
+disc.c:424: error opening file BDMV/index.bdmv
+disc.c:424: error opening file BDMV/BACKUP/index.bdmv
+bluray.c:2585: nav_get_title_list(/home/yuri/gitHub/encoding_bench/videos/San Andreas (2015) -  Tsunami Scene - Pure Action [4K]-jvIGFhqbe0c.webm/) failed
+[10:32:53] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[10:32:53] dvd: not a dvd - trying as a stream/file instead
+Input #0, matroska,webm, from '/home/yuri/gitHub/encoding_bench/videos/San Andreas (2015) -  Tsunami Scene - Pure Action [4K]-jvIGFhqbe0c.webm':
+  Metadata:
+    encoder         : google/video-file
+  Duration: 00:04:54.83, start: 0.000000, bitrate: 11972 kb/s
+    Stream #0:0(eng): Video: vp9 (Profile 0), yuv420p(tv, bt709), 3840x1596, SAR 1:1 DAR 320:133, 23 fps, 23 tbr, 1k tbn, 1k tbc (default)
+[10:32:53] scan: decoding previews for title 1
+[10:32:54] scan: 10 previews, 3840x1596, 23,000 fps, autocrop = 0/0/0/0, aspect 2,41:1, PAR 1:1
+[10:32:54] libhb: scan thread found 1 valid title(s)
+[10:32:54] Starting Task: Encoding Pass
+[10:32:54] job configuration:
+[10:32:54]  * source
+[10:32:54]    + /home/yuri/gitHub/encoding_bench/videos/San Andreas (2015) -  Tsunami Scene - Pure Action [4K]-jvIGFhqbe0c.webm
+[10:32:54]    + title 1, chapter(s) 1 to 1
+[10:32:54]    + container: matroska,webm
+[10:32:54]    + data rate: 11972 kbps
+[10:32:54]  * destination
+[10:32:54]    + /home/yuri/Scrivania/San Andreas (2015) -  Tsunami Scene - Pure Action [4K]-jvIGFhqbe0c.mkv
+[10:32:54]    + container: Matroska (libavformat)
+[10:32:54]  * video track
+[10:32:54]    + decoder: vp9
+[10:32:54]    + filters
+[10:32:54]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[10:32:54]      + Decomb (mode=39)
+[10:32:54]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[10:32:54]        + frame rate: 23,000 fps -> peak rate limited to 30,000 fps
+[10:32:54]      + Crop and Scale (width=1920:height=1080:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[10:32:54]        + source: 3840 * 1596, crop (0/0/0/0): 3840 * 1596, scale: 1920 * 1080
+[10:32:54]    + Output geometry
+[10:32:54]      + storage dimensions: 1920 x 1080
+[10:32:54]      + pixel aspect ratio: 180 : 133
+[10:32:54]      + display dimensions: 2598 x 1080
+[10:32:54]    + encoder: H.264 (NVEnc)
+[10:32:54]      + preset:  medium
+[10:32:54]      + profile: auto
+[10:32:54]      + level:   auto
+[10:32:54]      + quality: 24,00 (CQ)
+[10:32:54]      + color profile: 1-1-1
+[10:32:54] sync: expecting 6780 video frames
+[10:32:54] encavcodecInit: H.264 (Nvidia NVENC)
+[10:32:54] encavcodec: truncating framerate 27000000 / 1173913
+[10:32:54] encavcodec: encoding at rc=vbr 24,00
+[10:32:54] encavcodec: encoding with stored aspect 180/133
+[10:32:54] sync: first pts video is 0
+[10:32:54] sync: Chapter 1 at frame 1 time 0
+[10:35:35] reader: done. 1 scr changes
+[10:35:37] work: average encoding speed for job is 41,845745 fps
+[10:35:37] comb detect: heavy 42 | light 394 | uncombed 6345 | total 6781
+[10:35:37] decomb: deinterlaced 42 | blended 394 | unfiltered 6345 | total 6781
+[10:35:37] vfr: 6781 frames output, 0 dropped and 0 duped for CFR/PFR
+[10:35:37] vfr: lost time: 0 (0 frames)
+[10:35:37] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[10:35:37] vp9-decoder done: 6781 frames, 0 decoder errors
+[10:35:37] sync: got 6781 frames, 6780 expected
+[10:35:37] sync: framerate min 23,000 fps, max 23,000 fps, avg 23,000 fps
+[10:35:37] mux: track 0, 6781 frames, 303300265 bytes, 8229,94 kbps, fifo 512
+[10:35:37] Finished work at: Fri May 21 10:35:37 2021
+
+[10:35:37] libhb: work result = 0

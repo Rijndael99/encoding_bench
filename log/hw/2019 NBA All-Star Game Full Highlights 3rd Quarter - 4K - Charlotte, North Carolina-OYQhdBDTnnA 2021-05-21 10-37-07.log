@@ -1,0 +1,204 @@
+Handbrake Version: 1.3.3 (2021031800)
+[10:37:07] gtkgui: Custom Preset: /bench/Nvenc MKV 1080p30 med 24
+[10:37:07] Starting work at: Fri May 21 10:37:07 2021
+
+[10:37:07] 1 job(s) to process
+[10:37:07] json job:
+{
+    "Audio": {
+        "AudioList": [],
+        "CopyMask": [],
+        "FallbackEncoder": 0
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 4,
+                    "Seconds": 41,
+                    "Ticks": 25291260
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/yuri/Scrivania/2019 NBA All-Star Game Full Highlights 3rd Quarter - 4K - Charlotte, North Carolina-OYQhdBDTnnA.mkv",
+        "InlineParameterSets": false,
+        "Mp4Options": {
+            "IpodAtom": false,
+            "Mp4Optimize": false
+        },
+        "Mux": "mkv"
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 3,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "1",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "1"
+                }
+            },
+            {
+                "ID": 4,
+                "Settings": {
+                    "mode": "7"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": 2,
+                    "rate": "27000000/900000"
+                }
+            },
+            {
+                "ID": 12,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            }
+        ]
+    },
+    "Metadata": {
+        "Name": "2019 NBA All-Star Game Full Highlights 3rd Quarter - 4K - Charlotte, North Carol"
+    },
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "Path": "/home/yuri/gitHub/encoding_bench/videos/2019 NBA All-Star Game Full Highlights 3rd Quarter - 4K - Charlotte, North Carolina-OYQhdBDTnnA.webm",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "ColorFormat": 0,
+        "ColorMatrix": 1,
+        "ColorPrimaries": 1,
+        "ColorRange": 1,
+        "ColorTransfer": 1,
+        "Encoder": "nvenc_h264",
+        "Level": "auto",
+        "Options": "",
+        "Preset": "medium",
+        "Profile": "auto",
+        "QSV": {
+            "AsyncDepth": 4,
+            "Decode": false
+        },
+        "Quality": 24.0,
+        "Tune": "",
+        "Turbo": false,
+        "TwoPass": false
+    }
+}
+[10:37:07] CPU: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+[10:37:07]  - Intel microarchitecture Kaby Lake
+[10:37:07]  - logical processor count: 12
+[10:37:07] Intel Quick Sync Video support: yes
+[10:37:07]  - Intel Media SDK hardware: API 1.34 (minimum: 1.3)
+[10:37:07]  - H.264 encoder: yes
+[10:37:07]     - preferred implementation: hardware (any) via ANY
+[10:37:07]     - capabilities (hardware):  breftype icq+la+i+downs vsinfo opt1 opt2+mbbrc+extbrc+trellis+ib_adapt+nmpslice
+[10:37:07]  - H.265 encoder: yes (8bit: yes, 10bit: yes)
+[10:37:07]     - preferred implementation: hardware (any) via ANY
+[10:37:07]     - capabilities (hardware):  bpyramid icq vsinfo opt1
+[10:37:07] hb_scan: path=/home/yuri/gitHub/encoding_bench/videos/2019 NBA All-Star Game Full Highlights 3rd Quarter - 4K - Charlotte, North Carolina-OYQhdBDTnnA.webm, title_index=1
+udfread ERROR: ECMA 167 Volume Recognition failed
+disc.c:323: failed opening UDF image /home/yuri/gitHub/encoding_bench/videos/2019 NBA All-Star Game Full Highlights 3rd Quarter - 4K - Charlotte, North Carolina-OYQhdBDTnnA.webm
+disc.c:424: error opening file BDMV/index.bdmv
+disc.c:424: error opening file BDMV/BACKUP/index.bdmv
+bluray.c:2585: nav_get_title_list(/home/yuri/gitHub/encoding_bench/videos/2019 NBA All-Star Game Full Highlights 3rd Quarter - 4K - Charlotte, North Carolina-OYQhdBDTnnA.webm/) failed
+[10:37:07] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[10:37:07] dvd: not a dvd - trying as a stream/file instead
+Input #0, matroska,webm, from '/home/yuri/gitHub/encoding_bench/videos/2019 NBA All-Star Game Full Highlights 3rd Quarter - 4K - Charlotte, North Carolina-OYQhdBDTnnA.webm':
+  Metadata:
+    encoder         : google/video-file
+  Duration: 00:04:41.01, start: 0.000000, bitrate: 14849 kb/s
+    Stream #0:0(eng): Video: vp9 (Profile 0), yuv420p(tv, bt709), 3840x2160, SAR 1:1 DAR 16:9, 29,97 fps, 29,97 tbr, 1k tbn, 1k tbc (default)
+[10:37:07] scan: decoding previews for title 1
+[10:37:10] scan: 10 previews, 3840x2160, 29,970 fps, autocrop = 0/0/0/2, aspect 16:9, PAR 1:1
+[10:37:10] libhb: scan thread found 1 valid title(s)
+[10:37:10] Starting Task: Encoding Pass
+[10:37:10] job configuration:
+[10:37:10]  * source
+[10:37:10]    + /home/yuri/gitHub/encoding_bench/videos/2019 NBA All-Star Game Full Highlights 3rd Quarter - 4K - Charlotte, North Carolina-OYQhdBDTnnA.webm
+[10:37:10]    + title 1, chapter(s) 1 to 1
+[10:37:10]    + container: matroska,webm
+[10:37:10]    + data rate: 14849 kbps
+[10:37:10]  * destination
+[10:37:10]    + /home/yuri/Scrivania/2019 NBA All-Star Game Full Highlights 3rd Quarter - 4K - Charlotte, North Carolina-OYQhdBDTnnA.mkv
+[10:37:10]    + container: Matroska (libavformat)
+[10:37:10]  * video track
+[10:37:10]    + decoder: vp9
+[10:37:10]    + filters
+[10:37:10]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[10:37:10]      + Decomb (mode=39)
+[10:37:10]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[10:37:10]        + frame rate: 29,970 fps -> peak rate limited to 30,000 fps
+[10:37:10]      + Crop and Scale (width=1920:height=1080:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[10:37:10]        + source: 3840 * 2160, crop (0/0/0/0): 3840 * 2160, scale: 1920 * 1080
+[10:37:10]    + Output geometry
+[10:37:10]      + storage dimensions: 1920 x 1080
+[10:37:10]      + pixel aspect ratio: 1 : 1
+[10:37:10]      + display dimensions: 1920 x 1080
+[10:37:10]    + encoder: H.264 (NVEnc)
+[10:37:10]      + preset:  medium
+[10:37:10]      + profile: auto
+[10:37:10]      + level:   auto
+[10:37:10]      + quality: 24,00 (CQ)
+[10:37:10]      + color profile: 1-1-1
+[10:37:10] sync: expecting 8421 video frames
+[10:37:10] encavcodecInit: H.264 (Nvidia NVENC)
+[10:37:10] encavcodec: encoding at rc=vbr 24,00
+[10:37:10] encavcodec: encoding with stored aspect 1/1
+[10:37:10] sync: first pts video is 0
+[10:37:10] sync: Chapter 1 at frame 1 time 0
+[10:42:50] reader: done. 1 scr changes
+[10:42:52] work: average encoding speed for job is 24,643270 fps
+[10:42:52] comb detect: heavy 317 | light 1647 | uncombed 6458 | total 8422
+[10:42:52] decomb: deinterlaced 317 | blended 1647 | unfiltered 6458 | total 8422
+[10:42:52] vfr: 8422 frames output, 0 dropped and 0 duped for CFR/PFR
+[10:42:52] vfr: lost time: 0 (0 frames)
+[10:42:52] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[10:42:52] vp9-decoder done: 8422 frames, 0 decoder errors
+[10:42:52] sync: got 8422 frames, 8421 expected
+[10:42:52] sync: framerate min 29,970 fps, max 29,970 fps, avg 29,970 fps
+[10:42:52] mux: track 0, 8422 frames, 407758548 bytes, 11606,83 kbps, fifo 512
+[10:42:52] Finished work at: Fri May 21 10:42:52 2021
+
+[10:42:52] libhb: work result = 0
