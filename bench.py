@@ -1,35 +1,67 @@
 #!/usr/bin/env python3
-import io
-# from os import PathLike, close, path
+import platform
 import os
 import subprocess
-from datetime import datetime
+import time
 import exiftool
-# from os import listdir, system
+
+# we only read from this folder
+INPUT_FOLDER="videos/"
 
 # if you do a lot of write operation you may wanto to use an hard disk,
 # in order to preserve your SSD TBW
-output_folder="/run/media/yuri/Dati/hw_bench/"
+# OUTPUT_FOLDER="/run/media/yuri/Dati/hw_bench/"
+OUTPUT_FOLDER="./output/"
 
-# we only read from this folder
-input_folder="videos/"
-#TODO: add check for operating system
-#os.system("sudo fan_up.sh")
-for filename in os.listdir(input_folder):
-    f = open(output_folder+"log/"+filename[:-5]+".log", "w")
-    # TODO: tweak verbosity level
-    res=subprocess.call(
-       ['HandBrakeCLI', '--preset-import-file','HB_presets/swdef.json', 
-            '-i', input_folder+filename, '-o',output_folder+filename[:-5]+"enc1_.mkv"]
-            # important log messages are in stderr, we can throw away stdout
-            ,stderr=f, stdout=subprocess.DEVNULL)
-    f.close()
-    # TODO collect stats 
-    #       (video duration, time needed, starting dimension, ending dimension, avg framerate)
-    #       in csv or json format
-    # TODO retrieve size using exiftool
-    # os.path.getsize
-    metadata = exiftool.ExifTool().get_metadata(filename)
-    print("framerate="+metadata['Framerate'])
-    print("framerate="+metadata['Dimensione'])
-#os.system("sudo fan_down.sh")
+def main():
+    current_platform = platform.system()
+    handbrake_path = "HandBrakeCLI"
+
+    if(current_platform == "Windows"):
+        print("You are on Windows")
+    elif(current_platform == "Linux"):
+        print("You are on Linux")
+        print("Turning fans on...")
+        #os.system("sudo fan_up.sh")
+
+    input_metadata_array =  []
+    output_metadata_array =  []
+    times = []
+
+    for i, filename in enumerate(os.listdir(INPUT_FOLDER)):
+
+        input_path = INPUT_FOLDER + filename
+        output_path = OUTPUT_FOLDER + filename[:-5] + "enc1_.mkv"
+
+        f = open(OUTPUT_FOLDER + "log/"+filename[:-5] + ".log", "w+")
+        # TODO: tweak verbosity level
+        print("Processing file " + str(i + 1) + "/" + str(len(os.listdir(INPUT_FOLDER))) + " : " + filename)
+
+        t0 = time.time()
+
+        res=subprocess.call(
+        [ handbrake_path , '--preset-import-file','HB_presets/swdef.json', 
+                '-i', input_path, '-o', output_path]
+                # important log messages are in stderr, we can throw away stdout
+                ,stderr=f, stdout=subprocess.DEVNULL)
+
+        t1 = time.time()
+        f.close()
+
+        delta = t1 - t0
+        print("Time elapsed: " + str(delta))
+        times.append(delta)
+
+            # (video duration, time needed, starting dimension, ending dimension, avg framerate)
+        # in csv or json format
+        with exiftool.ExifTool() as et:
+                input_metadata_array.append(et.get_metadata(input_path))
+                output_metadata_array.append(et.get_metadata(output_path))
+
+    if(current_platform == "Linux"):
+        print("Shutting fans down...")
+        #os.system("sudo fan_down.sh")
+
+
+if __name__ == "__main__":
+    main()
